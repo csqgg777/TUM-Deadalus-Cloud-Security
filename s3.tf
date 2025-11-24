@@ -28,6 +28,12 @@ resource "aws_s3_object" "fruit_salad_image" {
   source = "image/fruitsalad.png"
 }
 
+resource "aws_s3_object" "capirbara" {
+  bucket = aws_s3_bucket.web_bucket.id
+  key    = "capirbara.png"
+  source = "image/capirbara.png"
+}
+
 #############################
 # Tropical Vault Bucket
 #############################
@@ -62,4 +68,10 @@ resource "aws_s3_object" "secret_image" {
   bucket = aws_s3_bucket.tropical_vault_bucket.id
   key    = "critical/financials.png"
   source = "image/financials.png"
+}
+
+resource "aws_s3_object" "capirbara" {
+  bucket = aws_s3_bucket.web_bucket.id
+  key    = "capirbara.png"
+  source = "image/capirbara.png"
 }
