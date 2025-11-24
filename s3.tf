@@ -30,8 +30,8 @@ resource "aws_s3_object" "fruit_salad_image" {
 
 resource "aws_s3_object" "capirbara" {
   bucket = aws_s3_bucket.web_bucket.id
-  key    = "capirbara.png"
-  source = "image/capirbara.png"
+  key    = "capirbara.jpg"
+  source = "image/capirbara.jpg"
 }
 
 #############################
