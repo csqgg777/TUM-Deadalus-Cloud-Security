@@ -69,9 +69,3 @@ resource "aws_s3_object" "secret_image" {
   key    = "critical/financials.png"
   source = "image/financials.png"
 }
-
-resource "aws_s3_object" "capirbara" {
-  bucket = aws_s3_bucket.web_bucket.id
-  key    = "capirbara.png"
-  source = "image/capirbara.png"
-}
